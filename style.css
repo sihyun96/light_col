@@ -1354,6 +1354,7 @@ body {
     align-items: center;
     gap: 80px;
     margin-bottom: 6rem;
+    margin-top: 5rem;
 }
 
 .ecosystem-section h2{
@@ -1380,6 +1381,7 @@ body {
   width: 100%;
   transform: scale(0.75); /* 살짝 작아졌다가 커지며 등장 */
     transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+    margin-top: 50px;
 }
 
 /* 가운데 로고 */
@@ -1391,6 +1393,7 @@ body {
   transform-style: preserve-3d;
   transform: translate(-50%, -50%);
   animation: diamondRotate 6s linear infinite;
+  
 
   /* 살짝 입체감 */
   filter: drop-shadow(0 8px 16px rgba(0,0,0,0.25));
