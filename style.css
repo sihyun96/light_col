@@ -216,10 +216,31 @@ body {
 
 .logo-wrapper { margin-bottom: 40px; width: 250px; }
 .logo-wrapper img { width: 100%; height: auto; }
-.visual-group { position: relative; width: 100%; max-width: 600px; height: 400px; display: flex; justify-content: center; align-items: center; }
-.obj-orbit { position: absolute; width: 140%; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; pointer-events: none; }
-.obj-phone { position: absolute; z-index: 2; width: 100%; max-width: 400px; height: auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3)); }
+.visual-group { 
+    position: relative; 
+    width: 100%; 
+    max-width: 800px; /* 600px -> 800px로 확대 (이미지가 담길 그릇 크기) */
+    height: 500px;     /* 400px -> 500px로 높이도 함께 확보 */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
 
+@media (min-width:892px){
+    .visual-group{
+        padding-top: 200px;
+    }
+}
+
+.obj-orbit { position: absolute; width: 140%; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1; pointer-events: none; }
+.obj-phone { 
+    position: absolute; 
+    z-index: 2; 
+    width: 100%; 
+    max-width: 550px; /* 400px -> 550px로 확대 (실제 보이는 크기) */
+    height: auto; 
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3)); 
+}
 
 /* --- Mobile Responsive (768px 이하) --- */
 @media (max-width: 768px) {

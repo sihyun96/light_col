@@ -492,6 +492,10 @@
   }
 }
 
+/* Create 섹션 내부의 info-box만 타겟팅 */
+.create-section .info-box {
+  border: none !important;      /* 테두리 제거 */
+}
 
 
 /* ************************************************************ */
